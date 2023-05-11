@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Pane.module.css'
+import styles from './Pane.module.scss'
 
 type PaneProps = {
     children: React.ReactNode

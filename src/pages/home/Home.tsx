@@ -20,7 +20,11 @@ function Home () {
 				</div>
 
 				<div className={styles.banner}>
-					Banner
+					<p>Banner</p>
+					<p>Banner</p>
+					<p>Banner</p>
+					<p>Banner</p>
+					<p>Banner</p>
 				</div>
 			</Pane>
 		</div>

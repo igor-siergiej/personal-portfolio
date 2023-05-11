@@ -2,7 +2,7 @@ $backgroundColor: #121212;
 $primaryColor: #31C48D;
 $secondaryColor: #398378;
 $tertiaryColor: #F4E04D;
-$lightBackgroundColor: #252525;
+$lightBackgroundColor: lighten($backgroundColor,10);
 
 body {
   margin: 0;

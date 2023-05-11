@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projects.css'
+import styles from './Projects.module.scss'
 import Pane from '../../components/pane/Pane'
 
 function Projects () {
