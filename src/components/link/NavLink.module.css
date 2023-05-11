@@ -1,0 +1,21 @@
+.navLinkContainer{
+    display: flex;
+    width: 150px;
+    height: 100%;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: large;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navLink:hover {
+    background-color: #292929;
+}
+
+

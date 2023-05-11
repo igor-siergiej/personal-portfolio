@@ -1,0 +1,27 @@
+@import '../../index.scss';
+
+.heading {
+    font-size: xxx-large;
+}
+
+.subHeading {
+    font-size: medium;
+}
+
+.img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+}
+
+.banner {
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5em;
+    background-color: $lightBackgroundColor;
+    border: 2px solid #2e2e2e;
+
+}
