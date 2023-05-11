@@ -17,7 +17,7 @@ const NavBar = () => {
 	return (
 		<nav className={styles.navBar}>
 			<div className={styles.title}>
-				<img src={icon} alt='Icon' className={styles.icon}></img>
+				<img src={icon} draggable={false} alt='Icon' className={styles.icon}></img>
                 Igor's Portfolio
 			</div>
 			{Links()}

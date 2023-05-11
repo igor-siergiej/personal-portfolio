@@ -7,7 +7,7 @@ function Home () {
 	return (
 		<div>
 			<Pane>
-				<img src={image} alt='Icon' className={styles.img}></img>
+				<img src={image} alt='Me' draggable={false} className={styles.img}></img>
 
 				<div className={styles.heading}>
 					Hello, I'm Igor, a student
