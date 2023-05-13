@@ -2,12 +2,14 @@ import React from 'react'
 import styles from './Home.module.scss'
 import Pane from '../../components/pane/Pane'
 import image from '../../images/image.jpg'
+import pdf from '../../IgorSiergiejCV.pdf'
+import { Logo } from '../../components/logo/Logo'
 
 function Home () {
 	return (
 		<div>
 			<Pane>
-				<img src={image} alt='Me' draggable={false} className={styles.img}></img>
+				<img onClick={onClick} src={image} alt='Me' draggable={false} className={styles.img}></img>
 
 				<div className={styles.heading}>
 					Hello, I'm Igor, a student
@@ -20,15 +22,23 @@ function Home () {
 				</div>
 
 				<div className={styles.banner}>
-					<p>Banner</p>
-					<p>Banner</p>
-					<p>Banner</p>
-					<p>Banner</p>
-					<p>Banner</p>
+					<Logo></Logo>
+					<Logo></Logo>
+					<Logo></Logo>
+					<Logo></Logo>
+					<Logo></Logo>
 				</div>
 			</Pane>
 		</div>
 	)
+}
+
+function coloriseImg (text:String) {
+
+}
+
+function onClick () {
+	window.open(pdf)
 }
 
 export default Home

@@ -22,6 +22,6 @@
     align-items: center;
     margin-top: 5em;
     background-color: $lightBackgroundColor;
-    border: 2px solid lighten($backgroundColor, 15);
+    border: 2px solid $lightBackgroundColor;
 
 }
