@@ -4,6 +4,7 @@ import Pane from '../../components/pane/Pane'
 import image from '../../images/image.jpg'
 import pdf from '../../IgorSiergiejCV.pdf'
 import { Logo } from '../../components/logo/Logo'
+import java from '../../images/java.png'
 
 function Home () {
 	return (
@@ -22,11 +23,11 @@ function Home () {
 				</div>
 
 				<div className={styles.banner}>
-					<Logo></Logo>
-					<Logo></Logo>
-					<Logo></Logo>
-					<Logo></Logo>
-					<Logo></Logo>
+					{Logo(java)}
+					{Logo(image)}
+					{Logo(java)}
+					{Logo(java)}
+					{Logo(java)}
 				</div>
 			</Pane>
 		</div>
