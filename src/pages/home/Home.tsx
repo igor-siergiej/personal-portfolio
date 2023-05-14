@@ -4,7 +4,12 @@ import Pane from '../../components/pane/Pane'
 import image from '../../images/image.jpg'
 import pdf from '../../IgorSiergiejCV.pdf'
 import { Logo } from '../../components/logo/Logo'
+
 import java from '../../images/java.png'
+import android from '../../images/android.png'
+import intellij from '../../images/intellij.png'
+import postgreSQL from '../../images/css.png'
+import ts from '../../images/ts.png'
 
 function Home () {
 	return (
@@ -19,23 +24,19 @@ function Home () {
 				</div>
 
 				<div className={styles.subHeading}>
-					I like to build systems.
+					I like to build systems.&#128170;
 				</div>
 
 				<div className={styles.banner}>
 					{Logo(java)}
-					{Logo(image)}
-					{Logo(java)}
-					{Logo(java)}
-					{Logo(java)}
+					{Logo(android)}
+					{Logo(intellij)}
+					{Logo(postgreSQL)}
+					{Logo(ts)}
 				</div>
 			</Pane>
 		</div>
 	)
-}
-
-function coloriseImg (text:String) {
-
 }
 
 function onClick () {

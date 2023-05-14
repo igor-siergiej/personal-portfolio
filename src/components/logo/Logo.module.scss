@@ -6,6 +6,8 @@
     filter: grayscale(0);
 }
 
+// create animation back from colorised back to gray
+
 @keyframes colorise {
     from {
         filter: grayscale(100);
