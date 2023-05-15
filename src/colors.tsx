@@ -7,15 +7,26 @@ enum ThemeType {
     background = '--backgroundColor'
 }
 
-const theme = {
+const defaultTheme = {
 	primary: variables.primaryColor,
 	secondary: variables.secondaryColor,
 	tertiary: variables.tertiaryColor,
 	background: variables.backgroundColor
 }
 
-function changeColor (type : ThemeType, newColor : string) {
-	document.documentElement.style.setProperty(type.toString(), newColor)
+const alternativeTheme = {
+	primary: 'green',
+	secondary: 'red',
+	tertiary: 'purple',
+	background: 'white'
 }
 
-export { theme, ThemeType, changeColor }
+function changeTheme () {
+	for (let i = 0; i < Object.keys(defaultTheme).length; i++) {
+		const thingToChange: string = Object.values(ThemeType)[i]
+		const change:string = Object.values(alternativeTheme)[i]
+		document.documentElement.style.setProperty(thingToChange, change)
+	}
+}
+
+export { defaultTheme, ThemeType, changeTheme }
