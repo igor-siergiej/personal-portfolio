@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './NavBar.module.scss'
-import { ThemeType, changeTheme } from '../../colors'
+import { changeTheme } from '../../theme/colors'
 import icon from '../../images/icons/lowResIcon.png'
 import { NavLink } from '../link/NavLink'
 
