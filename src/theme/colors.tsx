@@ -19,7 +19,7 @@ const darkTheme: Theme = {
 	fontColor: darkThemeColors.fontColor
 }
 
-const whiteTheme: Theme = {
+const lightTheme: Theme = {
 	primaryColor: lightThemeColors.primaryColor,
 	secondaryColor: lightThemeColors.secondaryColor,
 	tertiaryColor: lightThemeColors.tertiaryColor,
@@ -28,13 +28,25 @@ const whiteTheme: Theme = {
 	fontColor: lightThemeColors.fontColor
 }
 
-function changeTheme () {
-	const themeColors = Object.keys(whiteTheme)
-	const colorValues = Object.values(whiteTheme)
-	for (let i = 0; i < themeColors.length; i++) {
+function setTheme (theme :Theme) {
+	const colorKeys = Object.keys(theme)
+	const colorValues = Object.values(theme)
+	for (let i = 0; i < colorKeys.length; i++) {
 		console.log(colorValues[i])
-		document.documentElement.style.setProperty('--' + themeColors[i], colorValues[i])
+		document.documentElement.style.setProperty('--' + colorKeys[i], colorValues[i])
 	}
 }
 
-export { changeTheme }
+function setDarkTheme () {
+	setTheme(darkTheme)
+}
+
+function setLightTheme () {
+	setTheme(lightTheme)
+}
+
+function changeTheme () {
+	console.log('change')
+}
+
+export { setDarkTheme, setLightTheme, changeTheme }

@@ -1,12 +1,11 @@
-@import './theme/darkTheme.scss';
 
 :root {
-  --primaryColor: #{$primaryColor};
-  --secondaryColor: #{$secondaryColor};
-  --tertiaryColor: #{$tertiaryColor};
-  --backgroundColor: #{$backgroundColor};
-  --alternativeBackground: #{$alternativeBackground};
-  --fontColor: #{$fontColor};
+  --primaryColor: ;
+  --secondaryColor: ;
+  --tertiaryColor: ;
+  --backgroundColor: ;
+  --alternativeBackground: ;
+  --fontColor: ;
 }
 
 $primaryColor: var(--primaryColor);

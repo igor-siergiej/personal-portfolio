@@ -1,8 +1,9 @@
-import React from 'react'
 import styles from './NavBar.module.scss'
-import { changeTheme } from '../../theme/colors'
 import icon from '../../images/icons/lowResIcon.png'
 import { NavLink } from '../link/NavLink'
+import React, { useState, useEffect } from 'react'
+import { setLightTheme, setDarkTheme } from '../../theme/colors'
+import Switch from 'react-switch'
 
 const Links = () => {
 	return (
@@ -15,15 +16,51 @@ const Links = () => {
 }
 
 const NavBar = () => {
+	// eslint-disable-next-line no-extra-parens
+	const [showBanner, setShowBanner] = useState(() => setInitialState())
+
+	useEffect(() => {
+		window.localStorage.setItem('MY_APP_STATE', JSON.stringify(showBanner))
+	}, [showBanner])
+
+	const toggleTheme = () => {
+		if (showBanner) {
+			setLightTheme()
+			setShowBanner(false)
+		} else {
+			setDarkTheme()
+			setShowBanner(true)
+		}
+	}
+
 	return (
 		<nav className={styles.navBar}>
 			<div className={styles.title}>
-				<img src={icon} onClick={() => changeTheme()} draggable={false} alt='Icon' className={styles.icon}></img>
+				<img src={icon} draggable={false} alt='Icon' className={styles.icon}></img>
                 Igor's Portfolio
+			</div>
+			<Switch onChange={toggleTheme} checked={showBanner === true} />
+			<div>
+
 			</div>
 			{Links()}
 		</nav>
 	)
+}
+
+function setInitialState () {
+	const value = window.localStorage.getItem('MY_APP_STATE')
+	const booleanValue = JSON.parse(value ?? 'null')
+	if (booleanValue == null) {
+		setDarkTheme()
+		return true
+	} else if (booleanValue) {
+		setDarkTheme()
+		return true
+	} else {
+		setLightTheme()
+		return false
+	}
 }
 
 export default NavBar

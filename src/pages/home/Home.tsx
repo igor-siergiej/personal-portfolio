@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Home.module.scss'
 import Pane from '../../components/pane/Pane'
 import image from '../../images/image.jpg'
