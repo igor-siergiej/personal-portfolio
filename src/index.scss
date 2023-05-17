@@ -1,31 +1,21 @@
-@mixin define-color($title, $color) {
-  --#{$title}-h: #{hue($color)};
-  --#{$title}-l: #{lightness($color)};
-  --#{$title}-s: #{saturation($color)};
-  --#{$title}-a: #{alpha($color)};
-}
-
-@function color($title, $hue: 0deg, $lightness: 0%, $saturation: 0%, $alpha: 0) {
-  @return hsla(calc(var(--#{$title}-h) + #{$hue}),
-    calc(var(--#{$title}-s) + #{$saturation}),
-    calc(var(--#{$title}-l) + #{$lightness}),
-    calc(var(--#{$title}-a) + #{$alpha}),
-  );
-}
+@import './theme/darkTheme.scss';
 
 :root {
-  @include define-color('primary', #31C48D);
-  @include define-color('secondary', #398378);
-  @include define-color('tertiary', #F4E04D);
-  @include define-color('background', #121212);
-  @include define-color('alternativeBackground',#222222)
+  --primaryColor: #{$primaryColor};
+  --secondaryColor: #{$secondaryColor};
+  --tertiaryColor: #{$tertiaryColor};
+  --backgroundColor: #{$backgroundColor};
+  --alternativeBackground: #{$alternativeBackground};
+  --fontColor: #{$fontColor};
 }
 
-$primaryColor: color('primary');
-$secondaryColor: color('secondary');
-$tertiaryColor: color('tertiary');
-$backgroundColor: color('background');
-$lightBackgroundColor: color('alternativeBackground');
+$primaryColor: var(--primaryColor);
+$secondaryColor: var(--secondaryColor);
+$tertiaryColor: var(--tertiaryColor);
+$backgroundColor: var(--backgroundColor);
+$alternativeBackground: var(--alternativeBackground);
+$fontColor: var(--fontColor);
+
 
 html {
   -webkit-user-select: none;
@@ -37,7 +27,7 @@ body {
   margin: 0;
   font-family: 'Lekton';
   background-color: $backgroundColor;
-  color: azure;
+  color: $fontColor;
 }
 
 @font-face {

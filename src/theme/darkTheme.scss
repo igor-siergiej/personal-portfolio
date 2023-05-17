@@ -1,0 +1,15 @@
+$primaryColor: #31C48D;
+$secondaryColor: #398378;
+$tertiaryColor: #F4E04D;
+$backgroundColor: #121212;
+$alternativeBackground: #222222;
+$fontColor: azure;
+
+:export {
+    primaryColor: $primaryColor;
+    secondaryColor: $secondaryColor;
+    tertiaryColor: $tertiaryColor;
+    backgroundColor: $backgroundColor;
+    alternativeBackground: $alternativeBackground;
+    fontColor: $fontColor;
+}

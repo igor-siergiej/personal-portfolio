@@ -2,12 +2,10 @@
 
 .heading {
     font-size: xxx-large;
-    color: $tertiaryColor;
 }
 
 .subHeading {
     font-size: medium;
-    color: $secondaryColor;
 }
 
 .img {
@@ -23,7 +21,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5em;
-    background-color: $lightBackgroundColor;
-    border: 2px solid $lightBackgroundColor;
+    background-color: $alternativeBackground;
+    border: 2px solid $alternativeBackground;
 
 }
