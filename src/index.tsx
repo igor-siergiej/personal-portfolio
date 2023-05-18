@@ -21,6 +21,12 @@ export default function Website () {
 	)
 }
 
+// temporary setting animation time to 0 to prevent going back animations
+// from playing on webpage load.
+setTimeout(function () {
+	document.body.className = ''
+}, 500)
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )

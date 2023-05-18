@@ -39,7 +39,10 @@ const NavBar = () => {
 				<img src={icon} draggable={false} alt='Icon' className={styles.icon}></img>
                 Igor's Portfolio
 			</div>
-			<Switch onChange={toggleTheme} checked={showBanner === true} />
+			<label>
+				<span className={styles.label}>Theme: </span>
+				<Switch onChange={toggleTheme} checked={showBanner === true} />
+			</label>
 			<div>
 
 			</div>
