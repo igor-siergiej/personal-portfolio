@@ -14,7 +14,12 @@ function Home () {
 	return (
 		<div>
 			<Pane>
-				<img onClick={onClick} src={image} alt='Me' draggable={false} className={styles.img}></img>
+				<div className={styles.imgContainer}>
+					<img onClick={onClick} src={image} alt='Me' draggable={false} className={styles.img}></img>
+					<span className={styles.label}>
+						&lt;- Click me!
+					</span>
+				</div>
 
 				<div className={styles.heading}>
 					Hello, I'm Igor, a student
