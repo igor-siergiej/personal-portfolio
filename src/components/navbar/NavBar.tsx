@@ -16,11 +16,10 @@ const Links = () => {
 }
 
 const NavBar = () => {
-	// eslint-disable-next-line no-extra-parens
 	const [showBanner, setShowBanner] = useState(() => setInitialState())
 
 	useEffect(() => {
-		window.localStorage.setItem('MY_APP_STATE', JSON.stringify(showBanner))
+		window.localStorage.setItem('isDarkTheme', JSON.stringify(showBanner))
 	}, [showBanner])
 
 	const toggleTheme = () => {
@@ -52,7 +51,7 @@ const NavBar = () => {
 }
 
 function setInitialState () {
-	const value = window.localStorage.getItem('MY_APP_STATE')
+	const value = window.localStorage.getItem('isDarkTheme')
 	const booleanValue = JSON.parse(value ?? 'null')
 	if (booleanValue == null) {
 		setDarkTheme()
