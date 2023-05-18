@@ -4,11 +4,11 @@ import image from '../../images/image.jpg'
 import pdf from '../../IgorSiergiejCV.pdf'
 import { Logo } from '../../components/logo/Logo'
 
-import java from '../../images/java.png'
-import android from '../../images/android.png'
-import intellij from '../../images/intellij.png'
-import postgreSQL from '../../images/css.png'
-import ts from '../../images/ts.png'
+import java from '../../images/logos/java.png'
+import android from '../../images/logos/android.png'
+import intellij from '../../images/logos/intellij.png'
+import postgreSQL from '../../images/logos/css.png'
+import ts from '../../images/logos/ts.png'
 
 function Home () {
 	return (

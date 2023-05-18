@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.projectsContainer {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,54 +1,15 @@
 .logo {
-    animation-name: colorise;
-    animation-duration: 0.5s;
-    max-height: 100%;
-    max-width: 100%;
-    filter: grayscale(0);
-}
-
-.grayLogo {
-    animation-name: decolorise;
-    animation-duration: 0.5s;
-    filter: grayscale(100);
+    transition: all .35s ease-in-out; 
     max-height: 90%;
     max-width: 90%;
+    filter: grayscale(100);
 }
 
-.grayLogo:not(:hover) {
-  transition: visibility 0.01s 0.5s;
-}
-
-// create animation back from colorised back to gray
-
-@keyframes colorise {
-    from {
-        filter: grayscale(100);
-        max-height: 90%;
-        max-width: 90%;
-    }
-
-    to {
-        filter: grayscale(0);
+.logo:hover {
+    filter: grayscale(0);
         max-height: 100%;
         max-width: 100%;
-    }
 }
-
-@keyframes decolorise {
-    from {
-        filter: grayscale(0);
-        max-height: 100%;
-        max-width: 100%;
-    }
-
-    to {
-        filter: grayscale(100);
-        max-height: 90%;
-        max-width: 90%;
-    }
-}
-
-
 
 .logoContainer {
     height: 100%;
