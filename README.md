@@ -6,4 +6,5 @@ Current design which has link to CV as well as light mode and dark mode styling 
 using the toggle switch. This prefference persists between refreshes of the page. Also the logos 
 expand and colorise on hover.
 
-Need to fill in contacts and projects page.
+Projects page, database visualiser will be released soon and Gym tracker is in the works.
+![projects](https://github.com/igor-siergiej/personal-portfolio/assets/79415930/ce577d94-9e3f-4ab3-bb45-857a65926c54)
