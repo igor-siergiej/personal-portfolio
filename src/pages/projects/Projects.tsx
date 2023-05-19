@@ -5,6 +5,7 @@ import styles from './Projects.module.scss'
 
 import dietPlanner from '../../images/projects/dietPlanner.png'
 import polyLingo from '../../images/projects/polyLingo.png'
+import question from '../../images/projects/comingSoon.png'
 
 function Projects () {
 	return (
@@ -25,6 +26,20 @@ function Projects () {
 							'PolyLingo',
 							'Language learning android app',
 							'https://github.com/igor-siergiej/PolyLingo')
+						}
+
+						{Project(
+							question,
+							'Database Visualiser',
+							'Coming Soon...',
+							'')
+						}
+
+						{Project(
+							question,
+							'SetRep Gym Tracker',
+							'Coming Soon...',
+							'')
 						}
 
 					</div>

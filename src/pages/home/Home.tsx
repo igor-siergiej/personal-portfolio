@@ -1,14 +1,16 @@
 import styles from './Home.module.scss'
+
 import Pane from '../../components/pane/Pane'
-import image from '../../images/image.jpg'
-import pdf from '../../IgorSiergiejCV.pdf'
 import { Logo } from '../../components/logo/Logo'
 
+import image from '../../images/image.jpg'
 import java from '../../images/logos/java.png'
 import android from '../../images/logos/android.png'
 import intellij from '../../images/logos/intellij.png'
 import postgreSQL from '../../images/logos/css.png'
 import ts from '../../images/logos/ts.png'
+
+import pdf from '../../IgorSiergiejCV.pdf'
 
 function Home () {
 	return (
