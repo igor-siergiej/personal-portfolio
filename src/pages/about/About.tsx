@@ -1,15 +1,15 @@
 import React from 'react'
-import styles from './Contacts.module.scss'
+import styles from './About.module.scss'
 import Pane from '../../components/pane/Pane'
 
-function Contacts () {
+function About () {
 	return (
 		<div>
 			<Pane>
-			Contacts
+			About me
 			</Pane>
 		</div>
 	)
 }
 
-export default Contacts
+export default About

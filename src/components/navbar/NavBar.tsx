@@ -9,26 +9,26 @@ const Links = () => {
 	return (
 		<div className={styles.navLinksContainer}>
 			{NavLink('Home', '/')}
-			{NavLink('Contacts', '/contacts')}
 			{NavLink('Projects', '/projects')}
+			{NavLink('About Me', '/about')}
 		</div>
 	)
 }
 
 const NavBar = () => {
-	const [showBanner, setShowBanner] = useState(() => setInitialState())
+	const [theme, setTheme] = useState(() => setInitialState())
 
 	useEffect(() => {
-		window.localStorage.setItem('isDarkTheme', JSON.stringify(showBanner))
-	}, [showBanner])
+		window.localStorage.setItem('isDarkTheme', JSON.stringify(theme))
+	}, [theme])
 
 	const toggleTheme = () => {
-		if (showBanner) {
+		if (theme) {
 			setLightTheme()
-			setShowBanner(false)
+			setTheme(false)
 		} else {
 			setDarkTheme()
-			setShowBanner(true)
+			setTheme(true)
 		}
 	}
 
@@ -40,7 +40,7 @@ const NavBar = () => {
 			</div>
 			<label>
 				<span className={styles.label}>Theme: </span>
-				<Switch onChange={toggleTheme} checked={showBanner === true} />
+				<Switch onChange={toggleTheme} checked={theme === true} />
 			</label>
 			<div>
 
