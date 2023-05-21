@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.contact {
+    margin-left: 1em;
+    padding: 0.7em;
+    max-width: 50px;
+    max-height: 50px;
+    display: flex;
+    border: 2px solid $backgroundColor;
+    border-radius: 100px;
+    // filters images to black and then to background color
+    filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(4687%) hue-rotate(7deg) brightness(84%) contrast(86%);
+}

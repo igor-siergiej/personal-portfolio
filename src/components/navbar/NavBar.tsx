@@ -36,7 +36,7 @@ const NavBar = () => {
 		<nav className={styles.navBar}>
 			<div className={styles.title}>
 				<img src={icon} draggable={false} alt='Icon' className={styles.icon}></img>
-                Igor's Portfolio
+                Igor Siergiej
 			</div>
 			<label>
 				<span className={styles.label}>Theme: </span>

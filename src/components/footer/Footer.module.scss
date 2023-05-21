@@ -1,0 +1,21 @@
+@import '../../index.scss';
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5em;
+    padding-bottom: 2em;
+    background-color: $primaryColor;
+    color: $backgroundColor;
+    bottom: 0;
+    width: 100%;
+}
+
+.contacts {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}

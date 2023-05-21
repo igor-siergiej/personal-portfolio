@@ -20,7 +20,7 @@ const Project = (img: string, title: String, text: String, url: string) => {
 
 				</div>
 
-				<img src={img} draggable={false} alt='Icon'></img>
+				<img src={img} className={styles.image} draggable={false} alt='Icon'></img>
 
 			</div>
 		</div>
