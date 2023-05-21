@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.scss'
 import Contact from '../contact/Contact'
-import EmailContact from '../contact/EmailContact'
 
 import email from '../../images/contacts/email.svg'
 import github from '../../images/contacts/github.png'
@@ -14,13 +13,20 @@ const Footer = () => {
 			You can find me on these platforms or just email me...
 
 			<div className={styles.contacts}>
-				{Contact(github, 'https://github.com/igor-siergiej')}
-				{Contact(linkedIn, 'https://www.linkedin.com/in/igor-siergiej/')}
-				{EmailContact(email, 'igorsiergiej@gmail.com')}
+				{Contact(github, goToURL, 'https://github.com/igor-siergiej')}
+				{Contact(linkedIn, goToURL, 'https://www.linkedin.com/in/igor-siergiej')}
+				{Contact(email, goToMail, 'igorsiergiej@gmail.com')}
 			</div>
-
 		</div>
 	)
+}
+
+function goToURL (url:string) {
+	window.open(url)
+}
+
+function goToMail (address:string) {
+	window.location.href = 'mailto:' + address
 }
 
 export default Footer

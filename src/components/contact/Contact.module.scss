@@ -8,6 +8,15 @@
     display: flex;
     border: 2px solid $backgroundColor;
     border-radius: 100px;
+    
+}
+
+.contact:hover {
+    cursor: pointer;
+    background-color: $tertiaryColor;
+}
+
+.image {
     // filters images to black and then to background color
     filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(4687%) hue-rotate(7deg) brightness(84%) contrast(86%);
 }
