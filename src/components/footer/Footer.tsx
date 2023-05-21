@@ -5,6 +5,7 @@ import Contact from '../contact/Contact'
 import email from '../../images/contacts/email.svg'
 import github from '../../images/contacts/github.png'
 import linkedIn from '../../images/contacts/linkedIn.png'
+import instagram from '../../images/contacts/instagram.png'
 
 const Footer = () => {
 	return (
@@ -16,6 +17,7 @@ const Footer = () => {
 				{Contact(github, goToURL, 'https://github.com/igor-siergiej')}
 				{Contact(linkedIn, goToURL, 'https://www.linkedin.com/in/igor-siergiej')}
 				{Contact(email, goToMail, 'igorsiergiej@gmail.com')}
+				{Contact(instagram, goToURL, 'https://www.instagram.com/igor.siergiej')}
 			</div>
 		</div>
 	)
