@@ -34,11 +34,13 @@ function Home () {
 				</div>
 
 				<div className={styles.banner}>
-					{Logo(java)}
-					{Logo(android)}
-					{Logo(intellij)}
-					{Logo(postgreSQL)}
-					{Logo(ts)}
+					<div className={styles.logoContainer}>
+						{Logo(java)}
+						{Logo(android)}
+						{Logo(intellij)}
+						{Logo(postgreSQL)}
+						{Logo(ts)}
+					</div>
 				</div>
 			</Pane>
 		</div>

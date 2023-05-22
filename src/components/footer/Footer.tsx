@@ -10,8 +10,10 @@ import instagram from '../../images/contacts/instagram.png'
 const Footer = () => {
 	return (
 		<div className={styles.footer}>
-			<h2> Contact me! </h2>
+			<div className={styles.text}>
+				<h2> Contact me! </h2>
 			You can find me on these platforms or just email me...
+			</div>
 
 			<div className={styles.contacts}>
 				{Contact(github, goToURL, 'https://github.com/igor-siergiej')}
