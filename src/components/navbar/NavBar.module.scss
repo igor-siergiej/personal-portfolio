@@ -53,7 +53,9 @@
     margin-left: auto;
 }
 
-
+.linksContainer {
+    width: 450px;
+}
 
 
 
@@ -75,6 +77,10 @@
         width: 300px;
         background-color: $alternativeBackground;
         z-index: 1;
+    }
+
+    .linksContainer {
+        display: none;
     }
 
     .linksContainer .linksGroup {
