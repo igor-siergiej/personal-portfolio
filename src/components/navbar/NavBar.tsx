@@ -2,10 +2,11 @@ import styles from './NavBar.module.scss'
 import icon from '../../images/icons/lowResIcon.png'
 import { NavLink } from '../link/NavLink'
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { setLightTheme, setDarkTheme } from '../../theme/colors'
 import Switch from 'react-switch'
 
-import { RxHamburgerMenu } from 'react-icons/rx'
+import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx'
 
 const Links = () => {
 	return (
@@ -20,6 +21,11 @@ const Links = () => {
 const NavBar = () => {
 	const [theme, setTheme] = useState(() => setInitialState())
 	const [showNavbar, setShowNavbar] = useState(false)
+	const { pathname } = useLocation()
+
+	useEffect(() => {
+		setShowNavbar(false) // Close the navigation panel
+	}, [pathname])
 
 	const handleShowNavbar = () => {
 		setShowNavbar(!showNavbar)
@@ -39,6 +45,13 @@ const NavBar = () => {
 		}
 	}
 
+	let navBarIcon
+	if (!showNavbar) {
+		navBarIcon = <RxHamburgerMenu onClick={handleShowNavbar} className={styles.hamburger}/>
+	} else {
+		navBarIcon = <RxCross1 onClick={handleShowNavbar} className={styles.hamburger}/>
+	}
+
 	return (
 		<nav className={styles.navBar}>
 			<div className={styles.navBarContainer}>
@@ -54,7 +67,7 @@ const NavBar = () => {
 					</label>
 				</div>
 
-				<RxHamburgerMenu onClick={handleShowNavbar} className={styles.hamburger}/>
+				{navBarIcon}
 
 				<div className={showNavbar ? styles.linksContainerExpanded : styles.linksContainer}>
 					{Links()}

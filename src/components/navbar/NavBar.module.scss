@@ -6,6 +6,7 @@
     max-width: 1300px;
     margin: 0 auto !important;
     height: 75px;
+    transition: all 0.3s ease-in;
 }
 
 .navBar {
@@ -34,10 +35,6 @@
     height: 75px;
 }
 
-.navBarContainer .linksContainer .linksGroup{
-    width: 450px;
-}
-
 .label {
     color: $primaryColor;
     position: relative;
@@ -56,6 +53,10 @@
     margin-left: auto;
 }
 
+
+
+
+
 @media (max-width: 768px) {
 
     .title {
@@ -63,21 +64,27 @@
         margin-left: 1.5em;
     }
 
-    .linksContainer {
-        display: none;
-    }
-
-    .linksContainerExpanded .linksGroup {
+    .linksGroup {
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         position: absolute;
         top: 77px;
-        right: -80px;
+        right: -380px;
         height: 200px;
         width: 300px;
         background-color: $alternativeBackground;
         z-index: 1;
+    }
+
+    .linksContainer .linksGroup {
+        transition: transform 0.35s;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .linksContainerExpanded .linksGroup {
+        transition: transform 0.35s;
+        transform: translate3d(-280px, 0, 0);
     }
 
     .hamburger {
