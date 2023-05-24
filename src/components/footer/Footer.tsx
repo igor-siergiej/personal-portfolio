@@ -26,7 +26,7 @@ const Footer = () => {
 }
 
 function goToURL (url:string) {
-	window.open(url)
+	window.open(url, '_blank', 'noopener')
 }
 
 function goToMail (address:string) {

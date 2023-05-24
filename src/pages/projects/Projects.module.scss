@@ -14,3 +14,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.title {
+    font-size: xx-large;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: large;
+    }
+}

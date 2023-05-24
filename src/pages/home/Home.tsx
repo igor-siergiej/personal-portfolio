@@ -48,7 +48,7 @@ function Home () {
 }
 
 function onClick () {
-	window.open(pdf)
+	window.open(pdf, '_blank', 'noopener')
 }
 
 export default Home

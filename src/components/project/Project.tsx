@@ -3,7 +3,7 @@ import styles from './Project.module.scss'
 
 const Project = (img: string, title: String, text: String, url: string) => {
 	const goToURL = () => {
-		window.open(url)
+		window.open(url, '_blank', 'noopener')
 	}
 	return (
 		<div className={styles.project} onClick={goToURL}>

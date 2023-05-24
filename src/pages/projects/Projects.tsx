@@ -11,7 +11,9 @@ function Projects () {
 	return (
 		<div>
 			<Pane>
-				<h1> These are some of my projects:</h1>
+				<div className={styles.title}>
+				These are some of my projects:
+				</div>
 				<div className={styles.container}>
 					<div className={styles.projectsContainer}>
 						{Project(
