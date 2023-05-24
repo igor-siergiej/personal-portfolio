@@ -30,7 +30,7 @@ function Home () {
 				</div>
 
 				<div className={styles.subHeading}>
-					I like to build systems.&#128170;
+					I'm passionate about building cutting-edge systems and writing clean, efficient code.&#128170;
 				</div>
 
 				<div className={styles.banner}>
@@ -41,6 +41,10 @@ function Home () {
 						{Logo(postgreSQL)}
 						{Logo(ts)}
 					</div>
+				</div>
+
+				<div className={styles.subHeading}>
+
 				</div>
 			</Pane>
 		</div>

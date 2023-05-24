@@ -33,7 +33,7 @@ function Projects () {
 						{Project(
 							question,
 							'Database Visualiser',
-							'Coming Soon...',
+							'Coming 27th July',
 							'')
 						}
 
