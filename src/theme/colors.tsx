@@ -45,8 +45,4 @@ function setLightTheme () {
 	setTheme(lightTheme)
 }
 
-function changeTheme () {
-	console.log('change')
-}
-
-export { setDarkTheme, setLightTheme, changeTheme }
+export { setDarkTheme, setLightTheme }

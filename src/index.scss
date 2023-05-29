@@ -14,12 +14,10 @@ $backgroundColor: var(--backgroundColor);
 $alternativeBackground: var(--alternativeBackground);
 $fontColor: var(--fontColor);
 
-
 html {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   // preventing design from being shifted when scroll bar appears.
   width: 100vw;
   overflow-x: hidden;

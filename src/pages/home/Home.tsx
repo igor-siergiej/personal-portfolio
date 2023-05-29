@@ -14,40 +14,38 @@ import pdf from '../../IgorSiergiejCV.pdf'
 
 function Home () {
 	return (
-		<div>
-			<Pane>
-				<div className={styles.imgContainer}>
-					<img onClick={onClick} src={image} alt='Me' draggable={false} className={styles.img}></img>
-					<span className={styles.label}>
-						&lt;- Click me!
-					</span>
-				</div>
+		<Pane>
+			<div className={styles.imgContainer}>
+				<img onClick={onClick} src={image} alt='Me' draggable={false} className={styles.img}></img>
+				<span className={styles.label}>
+					&lt;- Click me!
+				</span>
+			</div>
 
-				<div className={styles.heading}>
-					Hello, I'm Igor, a student
-					<br></br>
-					sofware engineer.
-				</div>
+			<div className={styles.heading}>
+				Hello, I'm Igor, a student
+				<br></br>
+				sofware engineer.
+			</div>
 
-				<div className={styles.subHeading}>
-					I'm passionate about building cutting-edge systems and writing clean, efficient code.&#128170;
-				</div>
+			<div className={styles.subHeading}>
+				I'm passionate about building cutting-edge systems and writing clean, efficient code.&#128170;
+			</div >
 
-				<div className={styles.banner}>
-					<div className={styles.logoContainer}>
-						{Logo(java)}
-						{Logo(android)}
-						{Logo(intellij)}
-						{Logo(postgreSQL)}
-						{Logo(ts)}
-					</div>
+			<div className={styles.banner}>
+				<div className={styles.logoContainer}>
+					{Logo(java)}
+					{Logo(android)}
+					{Logo(intellij)}
+					{Logo(postgreSQL)}
+					{Logo(ts)}
 				</div>
+			</div>
 
-				<div className={styles.subHeading}>
+			<div className={styles.subHeading}>
 
-				</div>
-			</Pane>
-		</div>
+			</div>
+		</Pane>
 	)
 }
 

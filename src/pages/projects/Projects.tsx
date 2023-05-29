@@ -9,45 +9,43 @@ import question from '../../images/projects/comingSoon.png'
 
 function Projects () {
 	return (
-		<div>
-			<Pane>
-				<div className={styles.title}>
+		<Pane>
+			<div className={styles.title}>
 				These are some of my projects:
+			</div>
+			<div className={styles.container}>
+				<div className={styles.projectsContainer}>
+					{Project(
+						dietPlanner,
+						'Diet Planner',
+						'Diet planning desktop app',
+						'https://github.com/igor-siergiej/diet-planner')
+					}
+
+					{Project(
+						polyLingo,
+						'PolyLingo',
+						'Language learning android app',
+						'https://github.com/igor-siergiej/PolyLingo')
+					}
+
+					{Project(
+						question,
+						'Database Visualiser',
+						'Coming 27th July',
+						'')
+					}
+
+					{Project(
+						question,
+						'SetRep Gym Tracker',
+						'Coming Soon...',
+						'')
+					}
+
 				</div>
-				<div className={styles.container}>
-					<div className={styles.projectsContainer}>
-						{Project(
-							dietPlanner,
-							'Diet Planner',
-							'Diet planning desktop app',
-							'https://github.com/igor-siergiej/diet-planner')
-						}
-
-						{Project(
-							polyLingo,
-							'PolyLingo',
-							'Language learning android app',
-							'https://github.com/igor-siergiej/PolyLingo')
-						}
-
-						{Project(
-							question,
-							'Database Visualiser',
-							'Coming 27th July',
-							'')
-						}
-
-						{Project(
-							question,
-							'SetRep Gym Tracker',
-							'Coming Soon...',
-							'')
-						}
-
-					</div>
-				</div>
-			</Pane>
-		</div>
+			</div>
+		</Pane>
 	)
 }
 

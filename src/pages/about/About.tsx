@@ -4,11 +4,10 @@ import Pane from '../../components/pane/Pane'
 
 function About () {
 	return (
-		<div>
-			<Pane>
+		<Pane>
 			About me
-			</Pane>
-		</div>
+		</Pane>
+
 	)
 }
 
