@@ -43,7 +43,6 @@ function Home () {
 			</div>
 
 			<div className={styles.subHeading}>
-
 			</div>
 		</Pane>
 	)
