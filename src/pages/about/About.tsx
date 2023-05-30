@@ -15,7 +15,7 @@ function About () {
 					From building and upgrading my computer to modding games to coding and web development.
 					</p>
 					<p>
-					Fast-forward to today, and I’ve had the privilege of working on software in a huge corporation during an
+					Fast-forward to today, I’ve had the privilege of working on software in a huge corporation during an
 					internship and I'm an aspiring graduate software engineer.
 					</p>
 					<p>
