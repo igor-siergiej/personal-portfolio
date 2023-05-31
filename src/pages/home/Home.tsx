@@ -10,6 +10,10 @@ import intellij from '../../images/logos/intellij.png'
 import postgreSQL from '../../images/logos/css.png'
 import ts from '../../images/logos/ts.png'
 
+import { FaReact } from 'react-icons/fa'
+import { AiFillHdd } from 'react-icons/ai'
+import { BsPhone } from 'react-icons/bs'
+
 import pdf from '../../IgorSiergiejCV.pdf'
 import { Panel } from '../../components/panel/Panel'
 
@@ -48,9 +52,9 @@ function Home () {
 			</div>
 
 			<div className={styles.skillsContainer}>
-				{Panel('Front-end Development', 'Designing interfaces that are intuitive, efficient, and enjoyable to use.')}
-				{Panel('Mobile App Development', 'Transforming ideas into exceptional mobile app experiences.')}
-				{Panel('Back-end Development', 'Bringing your vision to life with the latest technology and design trends.')}
+				{Panel(FaReact, 'Front-end Development', 'Designing interfaces that are intuitive, efficient, and enjoyable to use.')}
+				{Panel(BsPhone, 'Mobile App Development', 'Transforming ideas into exceptional mobile app experiences.')}
+				{Panel(AiFillHdd, 'Back-end Development', 'Bringing your vision to life with the latest technology and design trends.')}
 			</div>
 		</Pane>
 	)

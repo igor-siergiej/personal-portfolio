@@ -1,13 +1,11 @@
 import React from 'react'
 import styles from './Contact.module.scss'
+import { IconType } from 'react-icons'
 
-const Contact = (img: string, handleClick: Function, url:string) => {
+const Contact = (icon: IconType, handleClick: Function, url:string) => {
 	return (
 		<div onClick={() => handleClick(url)} className={styles.contact}>
-			<img
-				src={img} alt='Contact Icon' draggable={false}
-				className={styles.image}>
-			</img>
+			{React.createElement(icon, { className: styles.icon })}
 		</div>
 	)
 }

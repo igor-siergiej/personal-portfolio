@@ -2,10 +2,8 @@ import React from 'react'
 import styles from './Footer.module.scss'
 import Contact from '../contact/Contact'
 
-import email from '../../images/contacts/email.svg'
-import github from '../../images/contacts/github.png'
-import linkedIn from '../../images/contacts/linkedIn.png'
-import instagram from '../../images/contacts/instagram.png'
+import { BsInstagram } from 'react-icons/bs'
+import { AiOutlineMail, AiFillGithub, AiOutlineLinkedin } from 'react-icons/ai'
 
 const Footer = () => {
 	return (
@@ -16,10 +14,10 @@ const Footer = () => {
 			</div>
 
 			<div className={styles.contacts}>
-				{Contact(github, goToURL, 'https://github.com/igor-siergiej')}
-				{Contact(linkedIn, goToURL, 'https://www.linkedin.com/in/igor-siergiej')}
-				{Contact(email, goToMail, 'igorsiergiej@gmail.com')}
-				{Contact(instagram, goToURL, 'https://www.instagram.com/igor.siergiej')}
+				{Contact(AiFillGithub, goToURL, 'https://github.com/igor-siergiej')}
+				{Contact(AiOutlineLinkedin, goToURL, 'https://www.linkedin.com/in/igor-siergiej')}
+				{Contact(AiOutlineMail, goToMail, 'igorsiergiej@gmail.com')}
+				{Contact(BsInstagram, goToURL, 'https://www.instagram.com/igor.siergiej')}
 			</div>
 		</div>
 	)

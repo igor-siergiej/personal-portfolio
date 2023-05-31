@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import React from 'react'
 import styles from './Panel.module.scss'
+import { IconType } from 'react-icons'
 
-function Panel (title: string, description: string) {
+function Panel (icon: IconType, title: string, description: string) {
 	return (
 		<div className={styles.panelContainer}>
+			{React.createElement(icon, { className: styles.icon })}
 			<div className={styles.titleContainer}>
 				{title}
 			</div>
