@@ -52,9 +52,23 @@ function Home () {
 			</div>
 
 			<div className={styles.skillsContainer}>
-				{Panel(FaReact, 'Front-end Development', 'Designing interfaces that are intuitive, efficient, and enjoyable to use.')}
-				{Panel(BsPhone, 'Mobile App Development', 'Transforming ideas into exceptional mobile app experiences.')}
-				{Panel(AiFillHdd, 'Back-end Development', 'Bringing your vision to life with the latest technology and design trends.')}
+				{Panel(
+					FaReact,
+					'Front-end Development',
+					'Designing interfaces that are intuitive and satisfying to use.'
+				)}
+
+				{Panel(
+					BsPhone,
+					'Mobile App Development',
+					'Creating designs mobile-first.'
+				)}
+
+				{Panel(
+					AiFillHdd,
+					'Back-end Development',
+					'Using latest technology and design trends to create efficient solutions.'
+				)}
 			</div>
 		</Pane>
 	)
