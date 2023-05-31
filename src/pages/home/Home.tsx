@@ -11,6 +11,7 @@ import postgreSQL from '../../images/logos/css.png'
 import ts from '../../images/logos/ts.png'
 
 import pdf from '../../IgorSiergiejCV.pdf'
+import { Panel } from '../../components/panel/Panel'
 
 function Home () {
 	return (
@@ -28,7 +29,7 @@ function Home () {
 				sofware engineer.
 			</div>
 
-			<div className={styles.subHeading}>
+			<div className={styles.subSubHeading}>
 				I'm passionate about building cutting-edge systems and writing clean, efficient code.&#128170;
 			</div >
 
@@ -43,6 +44,13 @@ function Home () {
 			</div>
 
 			<div className={styles.subHeading}>
+				My interests and skills.
+			</div>
+
+			<div className={styles.skillsContainer}>
+				{Panel('Front-end Development', 'Designing interfaces that are intuitive, efficient, and enjoyable to use.')}
+				{Panel('Mobile App Development', 'Transforming ideas into exceptional mobile app experiences.')}
+				{Panel('Back-end Development', 'Bringing your vision to life with the latest technology and design trends.')}
 			</div>
 		</Pane>
 	)
