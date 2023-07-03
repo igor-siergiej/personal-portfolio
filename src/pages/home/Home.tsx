@@ -28,7 +28,7 @@ function Home () {
 			</div>
 
 			<div className={styles.heading}>
-				Hello, I'm Igor, a student
+				Hello, I'm Igor, a graduate
 				<br></br>
 				sofware engineer.
 			</div>

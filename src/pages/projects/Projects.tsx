@@ -5,6 +5,7 @@ import styles from './Projects.module.scss'
 
 import dietPlanner from '../../images/projects/dietPlanner.png'
 import polyLingo from '../../images/projects/polyLingo.png'
+import dbVisualiser from '../../images/projects/dbVisualiser.png'
 import question from '../../images/projects/comingSoon.png'
 
 function Projects () {
@@ -30,10 +31,10 @@ function Projects () {
 					}
 
 					{Project(
-						question,
+						dbVisualiser,
 						'Database Visualiser',
-						'Coming 27th July',
-						'')
+						'SQL Teaching Tool',
+						'https://github.com/igor-siergiej/database-visualiser')
 					}
 
 					{Project(
